@@ -1,0 +1,21 @@
+{
+  "name": "rights-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "MCP server that lets AI agents license rights-clean music and pay per-use via x402, returning a verifiable license certificate. Zero dependencies.",
+  "bin": {
+    "rights-mcp": "src/server.js",
+    "rights": "src/cli.js"
+  },
+  "exports": {
+    ".": "./src/engine.js"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "demo": "node src/cli.js demo",
+    "test": "node --test 'test/*.test.js'"
+  },
+  "license": "MIT",
+  "author": "Yoshi Kondo <yoshi@musicailab.com>",
+  "keywords": ["mcp", "x402", "music", "licensing", "rights", "agents", "solana"]
+}
