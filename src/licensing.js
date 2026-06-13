@@ -62,7 +62,7 @@ export class SimBank {
     this.balances.set(payTo, this.balance(payTo) + split.rightsHolder);
     this.balances.set(platformAddr, this.balance(platformAddr) + split.platform);
     this.settled++;
-    return { txId: `sim-settle:${digest(auth.nonce).slice(0, 16)}`, at: Date.now };
+    return { txId: `sim-settle:${digest(auth.nonce).slice(0, 16)}`, at: Date.now() };
   }
 }
 
