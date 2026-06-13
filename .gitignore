@@ -2,3 +2,7 @@ data/*.jsonl
 node_modules/
 .DS_Store
 .env
+# AI session transcripts — local only (may contain tokens/PII)
+*-session.jsonl
+# grant prep — contains personal handle/wallet blanks
+GRANT_APPLICATION.md
